@@ -1,0 +1,102 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+h1 {
+  color: #164e8a;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #333;
+}
+
+.search {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 16px;
+  margin: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 25px;
+  box-shadow: 0 3px 10px #ccc;
+}
+
+th {
+  background-color: #1565c0;
+  color: white;
+  padding: 15px 8px;
+}
+
+td {
+  padding: 13px 8px;
+  border: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #e3f2fd;
+}
+
+.confirmed {
+  background-color: #c8e6c9;
+  color: #256029;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.pending {
+  background-color: #fff0c2;
+  color: #8a6500;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  color: #164e8a;
+}
+
+@media (max-width: 800px) {
+  .container {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 850px;
+  }
+
+  .search {
+    width: 90%;
+  }
+}
